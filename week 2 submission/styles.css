@@ -1,0 +1,136 @@
+*{   /* Basic root styles */
+    box-sizing: border-box;
+    font-family: 'Sofia';
+    font-size: 22px;
+}
+ 
+/* Page Header Styling */
+.page-title {
+    text-align: center;
+    margin-top: 120px;
+    text-decoration: underline;
+    
+}
+.page-title h1{
+    font-family: 'Sofia';
+    font-size: 22px;
+}
+
+ /* Styling for each section */
+.sec-1 {
+    border-style: solid;
+    border-width: 2px;
+    background-color:gray;
+    padding: 8px;
+    margin: 8px;
+    width: 2000px;
+    height: 410px;
+}
+.sec-2 {
+    border-style: solid;
+    border-width: 2px;
+    background-color:gray;
+    padding: 8px;
+    margin: 8px;
+    width: 2000px;
+    height: 410px;
+}
+
+.sec-3 {
+    border-style: solid;
+    border-width: 2px;
+    background-color:gray;
+    padding: 8px;
+    margin: 8px;
+    width: 2000px;
+    height: 410px;
+}
+
+
+ /* Styling the title of each section */
+.sec-1 h1 {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    margin-top: 0;
+    background-color: palevioletred;
+    float: right;
+    position: relative;
+    left: 8px;
+    bottom: 9px;
+    
+}
+
+.sec-2 h1 {
+    border: 1px solid black;
+    width: 60px;
+    height: 30px;
+    margin-top: 0;
+    position: relative;
+    background-color: brown;
+    float: right;
+    left: 9px;
+    bottom: 9px;
+}
+
+.sec-3 h1{
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+    margin-top: 0;
+    background-color: burlywood;
+    position: relative;
+    float: right;
+    left: 9px;
+    bottom: 9px;
+}
+
+/* Media Queries for Desktop, Tablet, and Mobile Responsiveness */
+@media (min-width:992px) {
+    .container{
+        display: flex;
+        padding: 50px;
+        justify-content: space-evenly;
+    }
+ }
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .container{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    .sec-1{
+        width: 48%;
+        height: 100%;
+        margin-bottom: 2%;
+       }
+    .sec-2{
+        width: 48%;
+        height: 100%;
+        margin-bottom: 2%;
+       }
+    .sec-3 {
+       width: 100%;
+   }
+}
+
+@media (max-width:767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-1 {
+        width: 100%;
+    }
+    .sec-2 {
+        width: 100%;
+    }
+    .sec-3 {
+        width: 100%;
+    }
+}
+
+
