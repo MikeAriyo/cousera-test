@@ -3,9 +3,7 @@ import { log } from "util";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-
-// Variables
-
+// variables
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
@@ -15,11 +13,9 @@ const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".goods-center");
-console.log(btns);
-//cart
 let cart = [];
 
-//getting the products
+// products
 class Products {
   async getProducts() {
     try {
@@ -46,7 +42,8 @@ class Products {
     }
   }
 }
-// Display Products
+
+// ui
 class UI {
   displayProducts(products) {
     let result = "";
@@ -74,7 +71,7 @@ class UI {
     productsDOM.innerHTML = result;
   }
   getBagButtons() {
-    const buttons = [...document.querySelectorAll(".cart-btn")];
+    const buttons = [...document.querySelectorAll(".bag-btn")];
     buttons.forEach((button) => {
       let id = button.dataset.id;
 
@@ -166,7 +163,7 @@ class UI {
         this.setCartValues(cart);
         Storage.saveCart(cart);
         cartContent.removeChild(removeItem.parentElement.parentElement);
-        const buttons = [...document.querySelectorAll(".cart-btn")];
+        const buttons = [...document.querySelectorAll(".bag-btn")];
         buttons.forEach((button) => {
           if (parseInt(button.dataset.id) === id) {
             button.disabled = false;
@@ -197,7 +194,7 @@ class UI {
           this.setCartValues(cart);
           Storage.saveCart(cart);
           cartContent.removeChild(lowerAmount.parentElement.parentElement);
-          const buttons = [...document.querySelectorAll(".cart-btn")];
+          const buttons = [...document.querySelectorAll(".bag-btn")];
           buttons.forEach((button) => {
             if (parseInt(button.dataset.id) === id) {
               button.disabled = false;
@@ -214,7 +211,7 @@ class UI {
     cart = [];
     this.setCartValues(cart);
     Storage.saveCart(cart);
-    const buttons = [...document.querySelectorAll(".cart-btn")];
+    const buttons = [...document.querySelectorAll(".bag-btn")];
     buttons.forEach((button) => {
       button.disabled = false;
       button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to bag`;
