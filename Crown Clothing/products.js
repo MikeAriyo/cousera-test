@@ -6,7 +6,7 @@ import img5 from "./images/adidas-nmd.png";
 import img6 from "./images/yeezy.png";
 import img7 from "./images/black-converse.png";
 import img8 from "./images/white-nike-high-tops.png";
-import img9 from "./images/black-shearling";
+import img9 from "./images/black-.png";
 import img10 from "./images/blue-jean-jacket.png";
 import img11 from "./images/grey-jean-jacket.png";
 import img12 from "./images/brown-shearling.png";
@@ -83,6 +83,114 @@ export default {
         title: "Nike White AirForce",
         price: 160.0,
         image: { fields: { file: { url: img8 } } },
+      },
+    },
+
+    {
+      sys: { id: "9" },
+      fields: {
+        title: "Black Jean Shearling",
+        price: 125.0,
+        image: { fields: { file: { url: img9 } } },
+      },
+    },
+
+    {
+      sys: { id: "10" },
+      fields: {
+        title: "Blue Jean Jacket",
+        price: 90.0,
+        image: { fields: { file: { url: img10 } } },
+      },
+    },
+
+    {
+      sys: { id: "11" },
+      fields: {
+        title: "Grey Jean Jacket",
+        price: 90.0,
+        image: { fields: { file: { url: img11 } } },
+      },
+    },
+
+    {
+      sys: { id: "12" },
+      fields: {
+        title: "Brown Shearling",
+        price: 165.0,
+        image: { fields: { file: { url: img12 } } },
+      },
+    },
+
+    {
+      sys: { id: "13" },
+      fields: {
+        title: "Blue Tanktop",
+        price: 25.0,
+        image: { fields: { file: { url: img13 } } },
+      },
+    },
+
+    {
+      sys: { id: "14" },
+      fields: {
+        title: "Floral Blouse",
+        price: 20.0,
+        image: { fields: { file: { url: img14 } } },
+      },
+    },
+
+    {
+      sys: { id: "15" },
+      fields: {
+        title: "Floral Dress",
+        price: 80.0,
+        image: { fields: { file: { url: img15 } } },
+      },
+    },
+
+    {
+      sys: { id: "16" },
+      fields: {
+        title: "Red Dots Dress",
+        price: 80.0,
+        image: { fields: { file: { url: img16 } } },
+      },
+    },
+
+    {
+      sys: { id: "17" },
+      fields: {
+        title: "Camo Down Vest",
+        price: 325.0,
+        image: { fields: { file: { url: img17 } } },
+      },
+    },
+
+    {
+      sys: { id: "18" },
+      fields: {
+        title: "Floral T-Shirt",
+        price: 160.0,
+        image: { fields: { file: { url: img18 } } },
+      },
+    },
+
+    {
+      sys: { id: "19" },
+      fields: {
+        title: "White & Black Longsleeve",
+        price: 80.0,
+        image: { fields: { file: { url: img19 } } },
+      },
+    },
+
+    {
+      sys: { id: "20" },
+      fields: {
+        title: "Pink T-Shirt",
+        price: 25.0,
+        image: { fields: { file: { url: img20 } } },
       },
     },
   ],
